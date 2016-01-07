@@ -60,12 +60,4 @@ abstract class TextType extends CommonAttributes
     {
         $this->type = $type;
     }
-
-    /**
-     * @return mixed
-     */
-    public function __toString()
-    {
-        return $this->getText();
-    }
 }
