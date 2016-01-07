@@ -15,7 +15,7 @@ namespace Bangpound\Atom\Model;
  *
  * @internal targetNamespace = http://www.w3.org/2005/Atom
  */
-abstract class TextType extends CommonAttributes implements \JsonSerializable
+abstract class TextType extends CommonAttributes
 {
     /**
      * @var Enum\TextConstructType

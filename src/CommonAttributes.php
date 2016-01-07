@@ -7,7 +7,7 @@ namespace Bangpound\Atom\Model;
  *
  * Every Atom class inherits from this,
  */
-abstract class CommonAttributes implements \JsonSerializable
+abstract class CommonAttributes
 {
     protected $lang;
 

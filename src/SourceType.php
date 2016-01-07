@@ -15,7 +15,7 @@ namespace Bangpound\Atom\Model;
  *
  * @internal targetNamespace = http://www.w3.org/2005/Atom
  */
-abstract class SourceType extends CommonAttributes implements \JsonSerializable
+abstract class SourceType extends CommonAttributes
 {
     use CommonTypes;
 
