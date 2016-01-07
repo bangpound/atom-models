@@ -1,0 +1,16 @@
+{
+    "name": "bangpound/atom-models",
+    "description": "Atom model classes",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Benjamin Doherty",
+            "email": "bjd@bangpound.org"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Bangpound\\Atom\\Model\\": "src"
+        }
+    }
+}
