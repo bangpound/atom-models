@@ -20,34 +20,6 @@ abstract class EntryType extends CommonAttributes
     use CommonTypes;
 
     /**
-     * @var PersonType (atom:personType)
-     *
-     * @internal element (http://www.w3.org/2001/XMLSchema)
-     */
-    protected $authors;
-
-    /**
-     * @var CategoryType (atom:categoryType)
-     *
-     * @internal element (http://www.w3.org/2001/XMLSchema)
-     */
-    protected $categories;
-
-    /**
-     * @var PersonType (atom:personType)
-     *
-     * @internal element (http://www.w3.org/2001/XMLSchema)
-     */
-    protected $contributors;
-
-    /**
-     * @var LinkType (atom:linksType)
-     *
-     * @internal element (http://www.w3.org/2001/XMLSchema)
-     */
-    protected $links;
-
-    /**
      * @var ContentType
      *
      * @internal element (http://www.w3.org/2001/XMLSchema)

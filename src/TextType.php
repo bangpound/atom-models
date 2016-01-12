@@ -18,7 +18,7 @@ namespace Bangpound\Atom\Model;
 abstract class TextType extends CommonAttributes
 {
     /**
-     * @var Enum\TextConstructType
+     * @var string
      *
      * @internal attribute (http://www.w3.org/2001/XMLSchema)
      */
@@ -30,7 +30,7 @@ abstract class TextType extends CommonAttributes
     protected $text;
 
     /**
-     * @return mixed
+     * @return string
      */
     public function getText()
     {
@@ -38,7 +38,7 @@ abstract class TextType extends CommonAttributes
     }
 
     /**
-     * @param mixed $text
+     * @param string $text
      */
     public function setText($text)
     {
@@ -46,7 +46,7 @@ abstract class TextType extends CommonAttributes
     }
 
     /**
-     * @return Enum\TextConstructType
+     * @return string
      */
     public function getType()
     {
@@ -54,9 +54,9 @@ abstract class TextType extends CommonAttributes
     }
 
     /**
-     * @param Enum\TextConstructType $type
+     * @param string $type
      */
-    public function setType(Enum\TextConstructType $type)
+    public function setType($type)
     {
         $this->type = $type;
     }

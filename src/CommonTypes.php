@@ -2,35 +2,37 @@
 
 namespace Bangpound\Atom\Model;
 
+use Doctrine\Common\Collections\Collection;
+
 trait CommonTypes
 {
     /**
-     * @var array (atom:personType)
+     * @var Collection (atom:personType)
      *
      * @internal element (http://www.w3.org/2001/XMLSchema)
      */
-    protected $authors = array();
+    protected $authors;
 
     /**
-     * @var array (atom:categoryType)
+     * @var Collection (atom:categoryType)
      *
      * @internal element (http://www.w3.org/2001/XMLSchema)
      */
-    protected $categories = array();
+    protected $categories;
 
     /**
-     * @var array (atom:personType)
+     * @var Collection (atom:personType)
      *
      * @internal element (http://www.w3.org/2001/XMLSchema)
      */
-    protected $contributors = array();
+    protected $contributors;
 
     /**
-     * @var array (atom:linksType)
+     * @var Collection (atom:linksType)
      *
      * @internal element (http://www.w3.org/2001/XMLSchema)
      */
-    protected $links = array();
+    protected $links;
 
     /**
      * Add author.
@@ -41,7 +43,7 @@ trait CommonTypes
      */
     public function addAuthor(PersonType $author)
     {
-        $this->authors[] = $author;
+        $this->authors->add($author);
 
         return $this;
     }
@@ -53,17 +55,13 @@ trait CommonTypes
      */
     public function removeAuthor(PersonType $author)
     {
-        $key = array_search($author, $this->authors, true);
-        if ($key !== false) {
-            unset($this->authors[$key]);
-        }
-        $this->authors = array_values($this->authors);
+        $this->authors->removeElement($author);
     }
 
     /**
      * Get authors.
      *
-     * @return array
+     * @return Collection
      */
     public function getAuthors()
     {
@@ -93,7 +91,7 @@ trait CommonTypes
      */
     public function addCategory(CategoryType $category)
     {
-        $this->categories[] = $category;
+        $this->categories->add($category);
 
         return $this;
     }
@@ -105,17 +103,13 @@ trait CommonTypes
      */
     public function removeCategory(CategoryType $category)
     {
-        $key = array_search($category, $this->categories, true);
-        if ($key !== false) {
-            unset($this->categories[$key]);
-        }
-        $this->categories = array_values($this->categories);
+        $this->categories->removeElement($category);
     }
 
     /**
      * Get category.
      *
-     * @return array
+     * @return Collection
      */
     public function getCategories()
     {
@@ -145,7 +139,7 @@ trait CommonTypes
      */
     public function addContributor(PersonType $contributor)
     {
-        $this->contributors[] = $contributor;
+        $this->contributors->add($contributor);
 
         return $this;
     }
@@ -157,17 +151,13 @@ trait CommonTypes
      */
     public function removeContributor(PersonType $contributor)
     {
-        $key = array_search($contributor, $this->contributors, true);
-        if ($key !== false) {
-            unset($this->contributors[$key]);
-        }
-        $this->contributors = array_values($this->contributors);
+        $this->contributors->removeElement($contributor);
     }
 
     /**
      * Get contributors.
      *
-     * @return array
+     * @return Collection
      */
     public function getContributors()
     {
@@ -197,7 +187,7 @@ trait CommonTypes
      */
     public function addLink(LinkType $link)
     {
-        $this->links[] = $link;
+        $this->links->add($link);
 
         return $this;
     }
@@ -209,17 +199,13 @@ trait CommonTypes
      */
     public function removeLink(LinkType $link)
     {
-        $key = array_search($link, $this->links, true);
-        if ($key !== false) {
-            unset($this->links[$key]);
-        }
-        $this->links = array_values($this->links);
+        $this->links->removeElement($link);
     }
 
     /**
      * Get links.
      *
-     * @return array
+     * @return Collection
      */
     public function getLinks()
     {
