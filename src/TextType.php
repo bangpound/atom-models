@@ -29,6 +29,10 @@ abstract class TextType extends CommonAttributes
      */
     protected $text;
 
+    public function __construct($text) {
+        $this->text = $text;
+    }
+
     /**
      * @return string
      */
