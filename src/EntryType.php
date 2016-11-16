@@ -134,7 +134,7 @@ abstract class EntryType extends CommonAttributes
     /**
      * @param TextType $summary
      */
-    public function setSummary(TextType $summary)
+    public function setSummary($summary)
     {
         $this->summary = $summary;
     }
@@ -166,7 +166,7 @@ abstract class EntryType extends CommonAttributes
     /**
      * @param TextType $rights
      */
-    public function setRights(TextType $rights)
+    public function setRights($rights)
     {
         $this->rights = $rights;
     }
@@ -182,7 +182,7 @@ abstract class EntryType extends CommonAttributes
     /**
      * @param SourceType $source
      */
-    public function setSource(SourceType $source)
+    public function setSource($source)
     {
         $this->source = $source;
     }
@@ -198,7 +198,7 @@ abstract class EntryType extends CommonAttributes
     /**
      * @param TextType $title
      */
-    public function setTitle(TextType $title)
+    public function setTitle($title)
     {
         $this->title = $title;
     }
