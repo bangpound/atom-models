@@ -41,7 +41,7 @@ trait CommonTypes
      *
      * @return EntryType
      */
-    public function addAuthor(PersonType $author)
+    public function addAuthor($author)
     {
         $this->authors->add($author);
 
@@ -89,7 +89,7 @@ trait CommonTypes
      *
      * @return EntryType
      */
-    public function addCategory(CategoryType $category)
+    public function addCategory($category)
     {
         $this->categories->add($category);
 
@@ -137,7 +137,7 @@ trait CommonTypes
      *
      * @return EntryType
      */
-    public function addContributor(PersonType $contributor)
+    public function addContributor($contributor)
     {
         $this->contributors->add($contributor);
 
@@ -185,7 +185,7 @@ trait CommonTypes
      *
      * @return EntryType
      */
-    public function addLink(LinkType $link)
+    public function addLink($link)
     {
         $this->links->add($link);
 
@@ -197,7 +197,7 @@ trait CommonTypes
      *
      * @param LinkType $link
      */
-    public function removeLink(LinkType $link)
+    public function removeLink($link)
     {
         $this->links->removeElement($link);
     }
