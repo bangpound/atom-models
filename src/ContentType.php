@@ -15,7 +15,7 @@ namespace Bangpound\Atom\Model;
  *
  * @internal targetNamespace = http://www.w3.org/2005/Atom
  */
-abstract class ContentType extends CommonAttributes
+abstract class ContentType extends CommonAttributes implements ContentTypeInterface
 {
     /**
      * @var string (xs:string)
@@ -82,17 +82,5 @@ abstract class ContentType extends CommonAttributes
     public function setContent($content)
     {
         $this->content = $content;
-    }
-
-    /**
-     * @return array
-     */
-    public function jsonSerialize()
-    {
-        return array_filter(array(
-            'type' => $this->getType(),
-            'src' => $this->getSrc(),
-            'content' => $this->getContent(),
-        ));
     }
 }

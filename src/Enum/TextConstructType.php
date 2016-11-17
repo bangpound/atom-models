@@ -16,21 +16,21 @@ namespace Bangpound\Atom\Model\Enum;
 final class TextConstructType
 {
     /**
-     * @staticvar string (xs:token)
+     * @var string
      *
      * @internal enumeration (http://www.w3.org/2001/XMLSchema)
      */
     const text = 'text';
 
     /**
-     * @staticvar string (xs:token)
+     * @var string
      *
      * @internal enumeration (http://www.w3.org/2001/XMLSchema)
      */
     const html = 'html';
 
     /**
-     * @staticvar string (xs:token)
+     * @var string
      *
      * @internal enumeration (http://www.w3.org/2001/XMLSchema)
      */

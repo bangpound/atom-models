@@ -15,12 +15,10 @@ namespace Bangpound\Atom\Model;
  *
  * @internal targetNamespace = http://www.w3.org/2005/Atom
  */
-abstract class FeedType extends CommonAttributes
+abstract class FeedType extends CommonTypes implements FeedTypeInterface
 {
-    use CommonTypes;
-
     /**
-     * @var GeneratorType (atom:generatorType)
+     * @var GeneratorTypeInterface (atom:generatorType)
      *
      * @internal element (http://www.w3.org/2001/XMLSchema)
      */
@@ -48,28 +46,28 @@ abstract class FeedType extends CommonAttributes
     protected $logo;
 
     /**
-     * @var TextType (atom:textType)
+     * @var TextTypeInterface (atom:textType)
      *
      * @internal element (http://www.w3.org/2001/XMLSchema)
      */
     protected $rights;
 
     /**
-     * @var TextType (atom:textType)
+     * @var TextTypeInterface (atom:textType)
      *
      * @internal element (http://www.w3.org/2001/XMLSchema)
      */
     protected $subtitle;
 
     /**
-     * @var TextType (atom:textType)
+     * @var TextTypeInterface (atom:textType)
      *
      * @internal element (http://www.w3.org/2001/XMLSchema)
      */
     protected $title;
 
     /**
-     * @var \DateTime (atom:dateTimeType)
+     * @var \DateTimeInterface (atom:dateTimeType)
      *
      * @internal element (http://www.w3.org/2001/XMLSchema)
      */
@@ -83,7 +81,7 @@ abstract class FeedType extends CommonAttributes
     protected $entries;
 
     /**
-     * @return \Bangpound\Atom\Model\GeneratorType
+     * @return GeneratorTypeInterface
      */
     public function getGenerator()
     {
@@ -91,9 +89,9 @@ abstract class FeedType extends CommonAttributes
     }
 
     /**
-     * @param \Bangpound\Atom\Model\GeneratorType $generator
+     * @param GeneratorTypeInterface $generator
      */
-    public function setGenerator(GeneratorType $generator)
+    public function setGenerator(GeneratorTypeInterface $generator)
     {
         $this->generator = $generator;
     }
@@ -147,7 +145,7 @@ abstract class FeedType extends CommonAttributes
     }
 
     /**
-     * @return \Bangpound\Atom\Model\TextType
+     * @return TextTypeInterface
      */
     public function getRights()
     {
@@ -155,15 +153,15 @@ abstract class FeedType extends CommonAttributes
     }
 
     /**
-     * @param \Bangpound\Atom\Model\TextType $rights
+     * @param TextTypeInterface $rights
      */
-    public function setRights($rights)
+    public function setRights(TextTypeInterface $rights)
     {
         $this->rights = $rights;
     }
 
     /**
-     * @return \Bangpound\Atom\Model\TextType
+     * @return TextTypeInterface
      */
     public function getSubtitle()
     {
@@ -171,15 +169,15 @@ abstract class FeedType extends CommonAttributes
     }
 
     /**
-     * @param \Bangpound\Atom\Model\TextType $subtitle
+     * @param TextTypeInterface $subtitle
      */
-    public function setSubtitle($subtitle)
+    public function setSubtitle(TextTypeInterface $subtitle)
     {
         $this->subtitle = $subtitle;
     }
 
     /**
-     * @return \Bangpound\Atom\Model\TextType
+     * @return TextTypeInterface
      */
     public function getTitle()
     {
@@ -187,15 +185,15 @@ abstract class FeedType extends CommonAttributes
     }
 
     /**
-     * @param \Bangpound\Atom\Model\TextType $title
+     * @param TextTypeInterface $title
      */
-    public function setTitle($title)
+    public function setTitle(TextTypeInterface $title)
     {
         $this->title = $title;
     }
 
     /**
-     * @return \DateTime
+     * @return \DateTimeInterface
      */
     public function getUpdated()
     {
@@ -203,9 +201,9 @@ abstract class FeedType extends CommonAttributes
     }
 
     /**
-     * @param \DateTime $updated
+     * @param \DateTimeInterface $updated
      */
-    public function setUpdated($updated)
+    public function setUpdated(\DateTimeInterface $updated)
     {
         $this->updated = $updated;
     }
@@ -213,27 +211,21 @@ abstract class FeedType extends CommonAttributes
     /**
      * Add entry.
      *
-     * @param EntryType $entry
-     *
-     * @return EntryType
+     * @param EntryTypeInterface $entry
      */
-    public function addEntry(EntryType $entry)
+    public function addEntry(EntryTypeInterface $entry)
     {
         $this->entries[] = $entry;
-
-        return $this;
     }
 
     /**
      * Remove entry.
      *
-     * @param EntryType $entry
+     * @param EntryTypeInterface $entry
      */
-    public function removeEntry(EntryType $entry)
+    public function removeEntry(EntryTypeInterface $entry)
     {
-        $this->entries = array_filter($this->entries, function (EntryType $value) use ($entry) {
-            return $entry !== $value;
-        });
+        $this->entries = array_diff($this->entries, [$entry]);
     }
 
     /**
@@ -250,13 +242,9 @@ abstract class FeedType extends CommonAttributes
      * Set entries.
      *
      * @param array $entries
-     *
-     * @return EntryType
      */
     public function setEntries(array $entries)
     {
         $this->entries = $entries;
-
-        return $this;
     }
 }

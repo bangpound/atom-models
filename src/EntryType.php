@@ -15,12 +15,10 @@ namespace Bangpound\Atom\Model;
  *
  * @internal targetNamespace = http://www.w3.org/2005/Atom
  */
-abstract class EntryType extends CommonAttributes
+abstract class EntryType extends CommonTypes implements EntryTypeInterface
 {
-    use CommonTypes;
-
     /**
-     * @var ContentType
+     * @var ContentTypeInterface
      *
      * @internal element (http://www.w3.org/2001/XMLSchema)
      */
@@ -34,14 +32,14 @@ abstract class EntryType extends CommonAttributes
     protected $id;
 
     /**
-     * @var \DateTime (atom:dateTimeType)
+     * @var \DateTimeInterface (atom:dateTimeType)
      *
      * @internal element (http://www.w3.org/2001/XMLSchema)
      */
     protected $published;
 
     /**
-     * @var TextType
+     * @var TextTypeInterface
      *
      * @internal element (http://www.w3.org/2001/XMLSchema)
      */
@@ -55,28 +53,28 @@ abstract class EntryType extends CommonAttributes
     protected $source;
 
     /**
-     * @var TextType
+     * @var TextTypeInterface
      *
      * @internal element (http://www.w3.org/2001/XMLSchema)
      */
     protected $summary;
 
     /**
-     * @var TextType
+     * @var TextTypeInterface
      *
      * @internal element (http://www.w3.org/2001/XMLSchema)
      */
     protected $title;
 
     /**
-     * @var \DateTime (atom:dateTimeType)
+     * @var \DateTimeInterface (atom:dateTimeType)
      *
      * @internal element (http://www.w3.org/2001/XMLSchema)
      */
     protected $updated;
 
     /**
-     * @return ContentType
+     * @return ContentTypeInterface
      */
     public function getContent()
     {
@@ -84,7 +82,7 @@ abstract class EntryType extends CommonAttributes
     }
 
     /**
-     * @param ContentType $content
+     * @param ContentTypeInterface $content
      */
     public function setContent($content)
     {
@@ -108,7 +106,7 @@ abstract class EntryType extends CommonAttributes
     }
 
     /**
-     * @return \DateTime
+     * @return \DateTimeInterface
      */
     public function getUpdated()
     {
@@ -116,7 +114,7 @@ abstract class EntryType extends CommonAttributes
     }
 
     /**
-     * @param \DateTime $updated
+     * @param \DateTimeInterface $updated
      */
     public function setUpdated($updated)
     {
@@ -124,7 +122,7 @@ abstract class EntryType extends CommonAttributes
     }
 
     /**
-     * @return TextType
+     * @return TextTypeInterface
      */
     public function getSummary()
     {
@@ -132,15 +130,15 @@ abstract class EntryType extends CommonAttributes
     }
 
     /**
-     * @param TextType $summary
+     * @param TextTypeInterface $summary
      */
-    public function setSummary(TextType $summary)
+    public function setSummary(TextTypeInterface $summary)
     {
         $this->summary = $summary;
     }
 
     /**
-     * @return \DateTime
+     * @return \DateTimeInterface
      */
     public function getPublished()
     {
@@ -148,7 +146,7 @@ abstract class EntryType extends CommonAttributes
     }
 
     /**
-     * @param \DateTime $published
+     * @param \DateTimeInterface $published
      */
     public function setPublished($published)
     {
@@ -156,7 +154,7 @@ abstract class EntryType extends CommonAttributes
     }
 
     /**
-     * @return TextType
+     * @return TextTypeInterface
      */
     public function getRights()
     {
@@ -164,15 +162,15 @@ abstract class EntryType extends CommonAttributes
     }
 
     /**
-     * @param TextType $rights
+     * @param TextTypeInterface $rights
      */
-    public function setRights(TextType $rights)
+    public function setRights(TextTypeInterface $rights)
     {
         $this->rights = $rights;
     }
 
     /**
-     * @return SourceType
+     * @return SourceTypeInterface
      */
     public function getSource()
     {
@@ -180,9 +178,9 @@ abstract class EntryType extends CommonAttributes
     }
 
     /**
-     * @param SourceType $source
+     * @param SourceTypeInterface $source
      */
-    public function setSource(SourceType $source)
+    public function setSource(SourceTypeInterface $source)
     {
         $this->source = $source;
     }
@@ -196,9 +194,9 @@ abstract class EntryType extends CommonAttributes
     }
 
     /**
-     * @param TextType $title
+     * @param TextTypeInterface $title
      */
-    public function setTitle(TextType $title)
+    public function setTitle(TextTypeInterface $title)
     {
         $this->title = $title;
     }

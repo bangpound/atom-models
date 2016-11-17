@@ -5,7 +5,7 @@ namespace Bangpound\Atom\Model;
 /**
  * CategoryType.
  *
- * The Atom cagegory construct is defined in section 4.2.2 of the format spec.
+ * The Atom category construct is defined in section 4.2.2 of the format spec.
  *
  * @category DTOs
  *
@@ -15,7 +15,7 @@ namespace Bangpound\Atom\Model;
  *
  * @internal targetNamespace = http://www.w3.org/2005/Atom
  */
-abstract class CategoryType extends CommonAttributes
+abstract class CategoryType extends CommonAttributes implements CategoryTypeInterface
 {
     /**
      * @var string (xs:string)

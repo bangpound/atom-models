@@ -15,7 +15,7 @@ namespace Bangpound\Atom\Model;
  *
  * @internal targetNamespace = http://www.w3.org/2005/Atom
  */
-abstract class TextType extends CommonAttributes
+abstract class TextType extends CommonAttributes implements TextTypeInterface
 {
     /**
      * @var string
@@ -28,10 +28,6 @@ abstract class TextType extends CommonAttributes
      * @var string
      */
     protected $text;
-
-    public function __construct($text) {
-        $this->text = $text;
-    }
 
     /**
      * @return string

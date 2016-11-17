@@ -15,7 +15,7 @@ namespace Bangpound\Atom\Model;
  *
  * @internal targetNamespace = http://www.w3.org/2005/Atom
  */
-abstract class GeneratorType extends CommonAttributes
+abstract class GeneratorType extends CommonAttributes implements GeneratorTypeInterface
 {
     protected $uri;
     protected $version;

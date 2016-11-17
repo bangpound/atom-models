@@ -15,7 +15,7 @@ namespace Bangpound\Atom\Model;
  *
  * @internal targetNamespace = http://www.w3.org/2005/Atom
  */
-abstract class LinkType extends CommonAttributes
+abstract class LinkType extends CommonAttributes implements LinkTypeInterface
 {
     /**
      * @var string (xs:anyURI)

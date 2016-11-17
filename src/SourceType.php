@@ -15,12 +15,10 @@ namespace Bangpound\Atom\Model;
  *
  * @internal targetNamespace = http://www.w3.org/2005/Atom
  */
-abstract class SourceType extends CommonAttributes
+abstract class SourceType extends CommonTypes implements SourceTypeInterface
 {
-    use CommonTypes;
-
     /**
-     * @var GeneratorType (atom:generatorType)
+     * @var GeneratorTypeInterface (atom:generatorType)
      *
      * @internal element (http://www.w3.org/2001/XMLSchema)
      */
@@ -48,35 +46,35 @@ abstract class SourceType extends CommonAttributes
     protected $logo;
 
     /**
-     * @var TextType (atom:textType)
+     * @var TextTypeInterface (atom:textType)
      *
      * @internal element (http://www.w3.org/2001/XMLSchema)
      */
     protected $rights;
 
     /**
-     * @var TextType (atom:textType)
+     * @var TextTypeInterface (atom:textType)
      *
      * @internal element (http://www.w3.org/2001/XMLSchema)
      */
     protected $subtitle;
 
     /**
-     * @var TextType (atom:textType)
+     * @var TextTypeInterface (atom:textType)
      *
      * @internal element (http://www.w3.org/2001/XMLSchema)
      */
     protected $title;
 
     /**
-     * @var \DateTime (atom:dateTimeType)
+     * @var \DateTimeInterface (atom:dateTimeType)
      *
      * @internal element (http://www.w3.org/2001/XMLSchema)
      */
     protected $updated;
 
     /**
-     * @return \DateTime
+     * @return \DateTimeInterface
      */
     public function getUpdated()
     {
@@ -84,15 +82,15 @@ abstract class SourceType extends CommonAttributes
     }
 
     /**
-     * @param \DateTime $updated
+     * @param \DateTimeInterface $updated
      */
-    public function setUpdated($updated)
+    public function setUpdated(\DateTimeInterface $updated)
     {
         $this->updated = $updated;
     }
 
     /**
-     * @return \Bangpound\Atom\Model\TextType
+     * @return TextTypeInterface
      */
     public function getTitle()
     {
@@ -100,15 +98,15 @@ abstract class SourceType extends CommonAttributes
     }
 
     /**
-     * @param \Bangpound\Atom\Model\TextType $title
+     * @param TextTypeInterface $title
      */
-    public function setTitle($title)
+    public function setTitle(TextTypeInterface $title)
     {
         $this->title = $title;
     }
 
     /**
-     * @return \Bangpound\Atom\Model\TextType
+     * @return TextTypeInterface
      */
     public function getSubtitle()
     {
@@ -116,15 +114,15 @@ abstract class SourceType extends CommonAttributes
     }
 
     /**
-     * @param \Bangpound\Atom\Model\TextType $subtitle
+     * @param TextTypeInterface $subtitle
      */
-    public function setSubtitle($subtitle)
+    public function setSubtitle(TextTypeInterface $subtitle)
     {
         $this->subtitle = $subtitle;
     }
 
     /**
-     * @return \Bangpound\Atom\Model\TextType
+     * @return TextTypeInterface
      */
     public function getRights()
     {
@@ -132,9 +130,9 @@ abstract class SourceType extends CommonAttributes
     }
 
     /**
-     * @param \Bangpound\Atom\Model\TextType $rights
+     * @param TextTypeInterface $rights
      */
-    public function setRights($rights)
+    public function setRights(TextTypeInterface $rights)
     {
         $this->rights = $rights;
     }
@@ -188,7 +186,7 @@ abstract class SourceType extends CommonAttributes
     }
 
     /**
-     * @return \Bangpound\Atom\Model\GeneratorType
+     * @return GeneratorTypeInterface
      */
     public function getGenerator()
     {
@@ -196,9 +194,9 @@ abstract class SourceType extends CommonAttributes
     }
 
     /**
-     * @param \Bangpound\Atom\Model\GeneratorType $generator
+     * @param GeneratorTypeInterface $generator
      */
-    public function setGenerator($generator)
+    public function setGenerator(GeneratorTypeInterface $generator)
     {
         $this->generator = $generator;
     }

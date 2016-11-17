@@ -2,33 +2,34 @@
 
 namespace Bangpound\Atom\Model;
 
-use Doctrine\Common\Collections\Collection;
-
-trait CommonTypes
+/**
+ * Class CommonTypes.
+ */
+abstract class CommonTypes extends CommonAttributes implements CommonTypesInterface
 {
     /**
-     * @var Collection (atom:personType)
+     * @var PersonTypeInterface[]
      *
      * @internal element (http://www.w3.org/2001/XMLSchema)
      */
     protected $authors;
 
     /**
-     * @var Collection (atom:categoryType)
+     * @var CategoryTypeInterface[]
      *
      * @internal element (http://www.w3.org/2001/XMLSchema)
      */
     protected $categories;
 
     /**
-     * @var Collection (atom:personType)
+     * @var PersonTypeInterface[]
      *
      * @internal element (http://www.w3.org/2001/XMLSchema)
      */
     protected $contributors;
 
     /**
-     * @var Collection (atom:linksType)
+     * @var LinkTypeInterface[]
      *
      * @internal element (http://www.w3.org/2001/XMLSchema)
      */
@@ -37,31 +38,27 @@ trait CommonTypes
     /**
      * Add author.
      *
-     * @param PersonType $author
-     *
-     * @return EntryType
+     * @param PersonTypeInterface $author
      */
-    public function addAuthor(PersonType $author)
+    public function addAuthor(PersonTypeInterface $author)
     {
-        $this->authors->add($author);
-
-        return $this;
+        $this->authors[] = $author;
     }
 
     /**
      * Remove author.
      *
-     * @param PersonType $author
+     * @param PersonTypeInterface $author
      */
-    public function removeAuthor(PersonType $author)
+    public function removeAuthor(PersonTypeInterface $author)
     {
-        $this->authors->removeElement($author);
+        $this->authors = array_diff($this->authors, [$author]);
     }
 
     /**
      * Get authors.
      *
-     * @return Collection
+     * @return PersonTypeInterface[]
      */
     public function getAuthors()
     {
@@ -71,45 +68,37 @@ trait CommonTypes
     /**
      * Set authors.
      *
-     * @param array $authors
-     *
-     * @return EntryType
+     * @param PersonTypeInterface[] $authors
      */
-    public function setAuthors($authors)
+    public function setAuthors(array $authors)
     {
         $this->authors = $authors;
-
-        return $this;
     }
 
     /**
      * Add category.
      *
-     * @param CategoryType $category
-     *
-     * @return EntryType
+     * @param CategoryTypeInterface $category
      */
-    public function addCategory(CategoryType $category)
+    public function addCategory(CategoryTypeInterface $category)
     {
-        $this->categories->add($category);
-
-        return $this;
+        $this->categories[] = $category;
     }
 
     /**
      * Remove category.
      *
-     * @param CategoryType $category
+     * @param CategoryTypeInterface $category
      */
-    public function removeCategory(CategoryType $category)
+    public function removeCategory(CategoryTypeInterface $category)
     {
-        $this->categories->removeElement($category);
+        $this->categories = array_diff($this->categories, [$category]);
     }
 
     /**
      * Get category.
      *
-     * @return Collection
+     * @return CategoryTypeInterface[]
      */
     public function getCategories()
     {
@@ -119,45 +108,37 @@ trait CommonTypes
     /**
      * Set category.
      *
-     * @param array $categories
-     *
-     * @return EntryType
+     * @param CategoryTypeInterface[] $categories
      */
-    public function setCategories($categories)
+    public function setCategories(array $categories)
     {
         $this->categories = $categories;
-
-        return $this;
     }
 
     /**
      * Add contributor.
      *
-     * @param PersonType $contributor
-     *
-     * @return EntryType
+     * @param PersonTypeInterface $contributor
      */
-    public function addContributor(PersonType $contributor)
+    public function addContributor(PersonTypeInterface $contributor)
     {
-        $this->contributors->add($contributor);
-
-        return $this;
+        $this->contributors[] = $contributor;
     }
 
     /**
      * Remove contributor.
      *
-     * @param PersonType $contributor
+     * @param PersonTypeInterface $contributor
      */
-    public function removeContributor(PersonType $contributor)
+    public function removeContributor(PersonTypeInterface $contributor)
     {
-        $this->contributors->removeElement($contributor);
+        $this->contributors = array_diff($this->contributors, [$contributor]);
     }
 
     /**
      * Get contributors.
      *
-     * @return Collection
+     * @return PersonTypeInterface[]
      */
     public function getContributors()
     {
@@ -167,45 +148,37 @@ trait CommonTypes
     /**
      * Set contributors.
      *
-     * @param array $contributors
-     *
-     * @return EntryType
+     * @param PersonTypeInterface[] $contributors
      */
-    public function setContributors($contributors)
+    public function setContributors(array $contributors)
     {
         $this->contributors = $contributors;
-
-        return $this;
     }
 
     /**
      * Add link.
      *
-     * @param LinkType $link
-     *
-     * @return EntryType
+     * @param LinkTypeInterface $link
      */
-    public function addLink(LinkType $link)
+    public function addLink(LinkTypeInterface $link)
     {
-        $this->links->add($link);
-
-        return $this;
+        $this->links[] = $link;
     }
 
     /**
      * Remove link.
      *
-     * @param LinkType $link
+     * @param LinkTypeInterface $link
      */
-    public function removeLink(LinkType $link)
+    public function removeLink(LinkTypeInterface $link)
     {
-        $this->links->removeElement($link);
+        $this->links = array_diff($this->links, [$link]);
     }
 
     /**
      * Get links.
      *
-     * @return Collection
+     * @return LinkTypeInterface[]
      */
     public function getLinks()
     {
@@ -215,14 +188,10 @@ trait CommonTypes
     /**
      * Set links.
      *
-     * @param array $links
-     *
-     * @return EntryType
+     * @param LinkTypeInterface[] $links
      */
-    public function setLinks($links)
+    public function setLinks(array $links)
     {
         $this->links = $links;
-
-        return $this;
     }
 }

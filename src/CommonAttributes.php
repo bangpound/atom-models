@@ -7,7 +7,7 @@ namespace Bangpound\Atom\Model;
  *
  * Every Atom class inherits from this,
  */
-abstract class CommonAttributes
+abstract class CommonAttributes implements CommonAttributesInterface
 {
     protected $lang;
 
