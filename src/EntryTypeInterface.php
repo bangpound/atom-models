@@ -25,7 +25,7 @@ interface EntryTypeInterface extends CommonTypesInterface
     /**
      * @param ContentTypeInterface $content
      */
-    public function setContent($content);
+    public function setContent(ContentTypeInterface $content);
 
     /**
      * @return string
@@ -45,7 +45,7 @@ interface EntryTypeInterface extends CommonTypesInterface
     /**
      * @param \DateTimeInterface $updated
      */
-    public function setUpdated($updated);
+    public function setUpdated(\DateTimeInterface $updated);
 
     /**
      * @return TextTypeInterface
@@ -65,7 +65,7 @@ interface EntryTypeInterface extends CommonTypesInterface
     /**
      * @param \DateTimeInterface $published
      */
-    public function setPublished($published);
+    public function setPublished(\DateTimeInterface $published);
 
     /**
      * @return TextTypeInterface

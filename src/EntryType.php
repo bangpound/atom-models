@@ -25,14 +25,14 @@ abstract class EntryType extends CommonTypes implements EntryTypeInterface
     protected $content;
 
     /**
-     * @var string (atom:textType)
+     * @var string
      *
      * @internal element (http://www.w3.org/2001/XMLSchema)
      */
     protected $id;
 
     /**
-     * @var \DateTimeInterface (atom:dateTimeType)
+     * @var \DateTimeInterface
      *
      * @internal element (http://www.w3.org/2001/XMLSchema)
      */
@@ -67,7 +67,7 @@ abstract class EntryType extends CommonTypes implements EntryTypeInterface
     protected $title;
 
     /**
-     * @var \DateTimeInterface (atom:dateTimeType)
+     * @var \DateTimeInterface
      *
      * @internal element (http://www.w3.org/2001/XMLSchema)
      */
@@ -84,7 +84,7 @@ abstract class EntryType extends CommonTypes implements EntryTypeInterface
     /**
      * @param ContentTypeInterface $content
      */
-    public function setContent($content)
+    public function setContent(ContentTypeInterface $content)
     {
         $this->content = $content;
     }
@@ -116,7 +116,7 @@ abstract class EntryType extends CommonTypes implements EntryTypeInterface
     /**
      * @param \DateTimeInterface $updated
      */
-    public function setUpdated($updated)
+    public function setUpdated(\DateTimeInterface $updated)
     {
         $this->updated = $updated;
     }
@@ -148,7 +148,7 @@ abstract class EntryType extends CommonTypes implements EntryTypeInterface
     /**
      * @param \DateTimeInterface $published
      */
-    public function setPublished($published)
+    public function setPublished(\DateTimeInterface $published)
     {
         $this->published = $published;
     }

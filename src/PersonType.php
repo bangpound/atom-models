@@ -18,21 +18,21 @@ namespace Bangpound\Atom\Model;
 abstract class PersonType extends CommonAttributes implements PersonTypeInterface
 {
     /**
-     * @var string (xs:string)
+     * @var string
      *
      * @internal element (http://www.w3.org/2001/XMLSchema)
      */
     protected $name;
 
     /**
-     * @var string (atom:uriType)
+     * @var string
      *
      * @internal element (http://www.w3.org/2001/XMLSchema)
      */
     protected $uri;
 
     /**
-     * @var string (atom:emailType)
+     * @var string
      *
      * @internal element (http://www.w3.org/2001/XMLSchema)
      */

@@ -18,14 +18,14 @@ namespace Bangpound\Atom\Model;
 abstract class ContentType extends CommonAttributes implements ContentTypeInterface
 {
     /**
-     * @var string (xs:string)
+     * @var string
      *
      * @internal attribute (http://www.w3.org/2001/XMLSchema)
      */
     protected $type = 'text';
 
     /**
-     * @var string (xs:anyURI)
+     * @var string
      *
      * @internal attribute (http://www.w3.org/2001/XMLSchema)
      */

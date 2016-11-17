@@ -18,42 +18,42 @@ namespace Bangpound\Atom\Model;
 abstract class LinkType extends CommonAttributes implements LinkTypeInterface
 {
     /**
-     * @var string (xs:anyURI)
+     * @var string
      *
      * @internal attribute (http://www.w3.org/2001/XMLSchema)
      */
     protected $href;
 
     /**
-     * @var string (xs:string)
+     * @var string
      *
      * @internal attribute (http://www.w3.org/2001/XMLSchema)
      */
     protected $rel;
 
     /**
-     * @var string (xs:string)
+     * @var string
      *
      * @internal attribute (http://www.w3.org/2001/XMLSchema)
      */
     protected $type;
 
     /**
-     * @var string (xs:NMTOKEN)
+     * @var string
      *
      * @internal attribute (http://www.w3.org/2001/XMLSchema)
      */
     protected $hreflang;
 
     /**
-     * @var string (xs:string)
+     * @var string
      *
      * @internal attribute (http://www.w3.org/2001/XMLSchema)
      */
     protected $title;
 
     /**
-     * @var int (xs:positiveInteger)
+     * @var int
      *
      * @internal attribute (http://www.w3.org/2001/XMLSchema)
      */

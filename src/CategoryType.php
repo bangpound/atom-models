@@ -18,21 +18,21 @@ namespace Bangpound\Atom\Model;
 abstract class CategoryType extends CommonAttributes implements CategoryTypeInterface
 {
     /**
-     * @var string (xs:string)
+     * @var string
      *
      * @internal attribute (http://www.w3.org/2001/XMLSchema)
      */
     protected $term;
 
     /**
-     * @var string (xs:anyURI)
+     * @var string
      *
      * @internal attribute (http://www.w3.org/2001/XMLSchema)
      */
     protected $scheme;
 
     /**
-     * @var string (xs:string)
+     * @var string
      *
      * @internal attribute (http://www.w3.org/2001/XMLSchema)
      */

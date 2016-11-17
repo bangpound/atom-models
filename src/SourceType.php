@@ -18,56 +18,56 @@ namespace Bangpound\Atom\Model;
 abstract class SourceType extends CommonTypes implements SourceTypeInterface
 {
     /**
-     * @var GeneratorTypeInterface (atom:generatorType)
+     * @var GeneratorTypeInterface
      *
      * @internal element (http://www.w3.org/2001/XMLSchema)
      */
     protected $generator;
 
     /**
-     * @var string (atom:iconType)
+     * @var string
      *
      * @internal element (http://www.w3.org/2001/XMLSchema)
      */
     protected $icon;
 
     /**
-     * @var string (atom:idType)
+     * @var string
      *
      * @internal element (http://www.w3.org/2001/XMLSchema)
      */
     protected $id;
 
     /**
-     * @var string (atom:logoType)
+     * @var string
      *
      * @internal element (http://www.w3.org/2001/XMLSchema)
      */
     protected $logo;
 
     /**
-     * @var TextTypeInterface (atom:textType)
+     * @var TextTypeInterface
      *
      * @internal element (http://www.w3.org/2001/XMLSchema)
      */
     protected $rights;
 
     /**
-     * @var TextTypeInterface (atom:textType)
+     * @var TextTypeInterface
      *
      * @internal element (http://www.w3.org/2001/XMLSchema)
      */
     protected $subtitle;
 
     /**
-     * @var TextTypeInterface (atom:textType)
+     * @var TextTypeInterface
      *
      * @internal element (http://www.w3.org/2001/XMLSchema)
      */
     protected $title;
 
     /**
-     * @var \DateTimeInterface (atom:dateTimeType)
+     * @var \DateTimeInterface
      *
      * @internal element (http://www.w3.org/2001/XMLSchema)
      */

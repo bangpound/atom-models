@@ -9,8 +9,14 @@ namespace Bangpound\Atom\Model;
  */
 abstract class CommonAttributes implements CommonAttributesInterface
 {
+    /**
+     * @var string
+     */
     protected $lang;
 
+    /**
+     * @var string
+     */
     protected $base;
 
     /**
