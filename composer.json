@@ -12,5 +12,10 @@
         "psr-4": {
             "Bangpound\\Atom\\Model\\": "src"
         }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-develop": "2.0.x-dev"
+        }
     }
 }
