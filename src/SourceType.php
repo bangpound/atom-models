@@ -84,7 +84,7 @@ abstract class SourceType extends CommonTypes implements SourceTypeInterface
     /**
      * @param \DateTimeInterface $updated
      */
-    public function setUpdated(\DateTimeInterface $updated)
+    public function setUpdated(\DateTimeInterface $updated = null)
     {
         $this->updated = $updated;
     }
@@ -100,7 +100,7 @@ abstract class SourceType extends CommonTypes implements SourceTypeInterface
     /**
      * @param TextTypeInterface $title
      */
-    public function setTitle(TextTypeInterface $title)
+    public function setTitle(TextTypeInterface $title = null)
     {
         $this->title = $title;
     }
@@ -116,7 +116,7 @@ abstract class SourceType extends CommonTypes implements SourceTypeInterface
     /**
      * @param TextTypeInterface $subtitle
      */
-    public function setSubtitle(TextTypeInterface $subtitle)
+    public function setSubtitle(TextTypeInterface $subtitle = null)
     {
         $this->subtitle = $subtitle;
     }
@@ -132,7 +132,7 @@ abstract class SourceType extends CommonTypes implements SourceTypeInterface
     /**
      * @param TextTypeInterface $rights
      */
-    public function setRights(TextTypeInterface $rights)
+    public function setRights(TextTypeInterface $rights = null)
     {
         $this->rights = $rights;
     }
@@ -196,7 +196,7 @@ abstract class SourceType extends CommonTypes implements SourceTypeInterface
     /**
      * @param GeneratorTypeInterface $generator
      */
-    public function setGenerator(GeneratorTypeInterface $generator)
+    public function setGenerator(GeneratorTypeInterface $generator = null)
     {
         $this->generator = $generator;
     }

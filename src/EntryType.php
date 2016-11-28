@@ -84,7 +84,7 @@ abstract class EntryType extends CommonTypes implements EntryTypeInterface
     /**
      * @param ContentTypeInterface $content
      */
-    public function setContent(ContentTypeInterface $content)
+    public function setContent(ContentTypeInterface $content = null)
     {
         $this->content = $content;
     }
@@ -116,7 +116,7 @@ abstract class EntryType extends CommonTypes implements EntryTypeInterface
     /**
      * @param \DateTimeInterface $updated
      */
-    public function setUpdated(\DateTimeInterface $updated)
+    public function setUpdated(\DateTimeInterface $updated = null)
     {
         $this->updated = $updated;
     }
@@ -132,7 +132,7 @@ abstract class EntryType extends CommonTypes implements EntryTypeInterface
     /**
      * @param TextTypeInterface $summary
      */
-    public function setSummary(TextTypeInterface $summary)
+    public function setSummary(TextTypeInterface $summary = null)
     {
         $this->summary = $summary;
     }
@@ -148,7 +148,7 @@ abstract class EntryType extends CommonTypes implements EntryTypeInterface
     /**
      * @param \DateTimeInterface $published
      */
-    public function setPublished(\DateTimeInterface $published)
+    public function setPublished(\DateTimeInterface $published = null)
     {
         $this->published = $published;
     }
@@ -164,7 +164,7 @@ abstract class EntryType extends CommonTypes implements EntryTypeInterface
     /**
      * @param TextTypeInterface $rights
      */
-    public function setRights(TextTypeInterface $rights)
+    public function setRights(TextTypeInterface $rights = null)
     {
         $this->rights = $rights;
     }
@@ -180,7 +180,7 @@ abstract class EntryType extends CommonTypes implements EntryTypeInterface
     /**
      * @param SourceTypeInterface $source
      */
-    public function setSource(SourceTypeInterface $source)
+    public function setSource(SourceTypeInterface $source  = null)
     {
         $this->source = $source;
     }
@@ -196,7 +196,7 @@ abstract class EntryType extends CommonTypes implements EntryTypeInterface
     /**
      * @param TextTypeInterface $title
      */
-    public function setTitle(TextTypeInterface $title)
+    public function setTitle(TextTypeInterface $title = null)
     {
         $this->title = $title;
     }

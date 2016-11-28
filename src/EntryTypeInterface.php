@@ -25,7 +25,7 @@ interface EntryTypeInterface extends CommonTypesInterface
     /**
      * @param ContentTypeInterface $content
      */
-    public function setContent(ContentTypeInterface $content);
+    public function setContent(ContentTypeInterface $content = null);
 
     /**
      * @return string
@@ -45,7 +45,7 @@ interface EntryTypeInterface extends CommonTypesInterface
     /**
      * @param \DateTimeInterface $updated
      */
-    public function setUpdated(\DateTimeInterface $updated);
+    public function setUpdated(\DateTimeInterface $updated = null);
 
     /**
      * @return TextTypeInterface
@@ -55,7 +55,7 @@ interface EntryTypeInterface extends CommonTypesInterface
     /**
      * @param TextTypeInterface $summary
      */
-    public function setSummary(TextTypeInterface $summary);
+    public function setSummary(TextTypeInterface $summary = null);
 
     /**
      * @return \DateTimeInterface
@@ -65,7 +65,7 @@ interface EntryTypeInterface extends CommonTypesInterface
     /**
      * @param \DateTimeInterface $published
      */
-    public function setPublished(\DateTimeInterface $published);
+    public function setPublished(\DateTimeInterface $published = null);
 
     /**
      * @return TextTypeInterface
@@ -75,7 +75,7 @@ interface EntryTypeInterface extends CommonTypesInterface
     /**
      * @param TextTypeInterface $rights
      */
-    public function setRights(TextTypeInterface $rights);
+    public function setRights(TextTypeInterface $rights = null);
 
     /**
      * @return SourceTypeInterface
@@ -85,7 +85,7 @@ interface EntryTypeInterface extends CommonTypesInterface
     /**
      * @param SourceTypeInterface $source
      */
-    public function setSource(SourceTypeInterface $source);
+    public function setSource(SourceTypeInterface $source = null);
 
     /**
      * @return string
@@ -95,5 +95,5 @@ interface EntryTypeInterface extends CommonTypesInterface
     /**
      * @param TextTypeInterface $title
      */
-    public function setTitle(TextTypeInterface $title);
+    public function setTitle(TextTypeInterface $title = null);
 }

@@ -25,7 +25,7 @@ interface FeedTypeInterface extends CommonTypesInterface
     /**
      * @param GeneratorTypeInterface $generator
      */
-    public function setGenerator(GeneratorTypeInterface $generator);
+    public function setGenerator(GeneratorTypeInterface $generator = null);
 
     /**
      * @return string
@@ -65,7 +65,7 @@ interface FeedTypeInterface extends CommonTypesInterface
     /**
      * @param TextTypeInterface $rights
      */
-    public function setRights(TextTypeInterface $rights);
+    public function setRights(TextTypeInterface $rights = null);
 
     /**
      * @return TextTypeInterface
@@ -75,7 +75,7 @@ interface FeedTypeInterface extends CommonTypesInterface
     /**
      * @param TextTypeInterface $subtitle
      */
-    public function setSubtitle(TextTypeInterface $subtitle);
+    public function setSubtitle(TextTypeInterface $subtitle = null);
 
     /**
      * @return TextTypeInterface
@@ -85,7 +85,7 @@ interface FeedTypeInterface extends CommonTypesInterface
     /**
      * @param TextTypeInterface $title
      */
-    public function setTitle(TextTypeInterface $title);
+    public function setTitle(TextTypeInterface $title = null);
 
     /**
      * @return \DateTimeInterface
@@ -95,7 +95,7 @@ interface FeedTypeInterface extends CommonTypesInterface
     /**
      * @param \DateTimeInterface $updated
      */
-    public function setUpdated(\DateTimeInterface $updated);
+    public function setUpdated(\DateTimeInterface $updated = null);
 
     /**
      * Add entry.

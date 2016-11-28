@@ -25,7 +25,7 @@ interface SourceTypeInterface extends CommonAttributesInterface
     /**
      * @param \DateTimeInterface $updated
      */
-    public function setUpdated(\DateTimeInterface $updated);
+    public function setUpdated(\DateTimeInterface $updated = null);
 
     /**
      * @return TextTypeInterface
@@ -35,7 +35,7 @@ interface SourceTypeInterface extends CommonAttributesInterface
     /**
      * @param TextTypeInterface $title
      */
-    public function setTitle(TextTypeInterface $title);
+    public function setTitle(TextTypeInterface $title = null);
 
     /**
      * @return TextTypeInterface
@@ -45,7 +45,7 @@ interface SourceTypeInterface extends CommonAttributesInterface
     /**
      * @param TextTypeInterface $subtitle
      */
-    public function setSubtitle(TextTypeInterface $subtitle);
+    public function setSubtitle(TextTypeInterface $subtitle = null);
 
     /**
      * @return TextTypeInterface
@@ -55,7 +55,7 @@ interface SourceTypeInterface extends CommonAttributesInterface
     /**
      * @param TextTypeInterface $rights
      */
-    public function setRights(TextTypeInterface $rights);
+    public function setRights(TextTypeInterface $rights = null);
 
     /**
      * @return string
@@ -95,5 +95,5 @@ interface SourceTypeInterface extends CommonAttributesInterface
     /**
      * @param GeneratorTypeInterface $generator
      */
-    public function setGenerator(GeneratorTypeInterface $generator);
+    public function setGenerator(GeneratorTypeInterface $generator = null);
 }

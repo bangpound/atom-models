@@ -91,7 +91,7 @@ abstract class FeedType extends CommonTypes implements FeedTypeInterface
     /**
      * @param GeneratorTypeInterface $generator
      */
-    public function setGenerator(GeneratorTypeInterface $generator)
+    public function setGenerator(GeneratorTypeInterface $generator = null)
     {
         $this->generator = $generator;
     }
@@ -155,7 +155,7 @@ abstract class FeedType extends CommonTypes implements FeedTypeInterface
     /**
      * @param TextTypeInterface $rights
      */
-    public function setRights(TextTypeInterface $rights)
+    public function setRights(TextTypeInterface $rights = null)
     {
         $this->rights = $rights;
     }
@@ -171,7 +171,7 @@ abstract class FeedType extends CommonTypes implements FeedTypeInterface
     /**
      * @param TextTypeInterface $subtitle
      */
-    public function setSubtitle(TextTypeInterface $subtitle)
+    public function setSubtitle(TextTypeInterface $subtitle = null)
     {
         $this->subtitle = $subtitle;
     }
@@ -187,7 +187,7 @@ abstract class FeedType extends CommonTypes implements FeedTypeInterface
     /**
      * @param TextTypeInterface $title
      */
-    public function setTitle(TextTypeInterface $title)
+    public function setTitle(TextTypeInterface $title = null)
     {
         $this->title = $title;
     }
@@ -203,7 +203,7 @@ abstract class FeedType extends CommonTypes implements FeedTypeInterface
     /**
      * @param \DateTimeInterface $updated
      */
-    public function setUpdated(\DateTimeInterface $updated)
+    public function setUpdated(\DateTimeInterface $updated = null)
     {
         $this->updated = $updated;
     }
