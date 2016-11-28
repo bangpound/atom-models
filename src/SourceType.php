@@ -148,7 +148,7 @@ abstract class SourceType extends CommonTypes implements SourceTypeInterface
     /**
      * @param string $logo
      */
-    public function setLogo($logo)
+    public function setLogo($logo = null)
     {
         $this->logo = $logo;
     }
