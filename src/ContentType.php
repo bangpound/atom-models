@@ -47,7 +47,7 @@ abstract class ContentType extends CommonAttributes implements ContentTypeInterf
     /**
      * @param string $type
      */
-    public function setType($type)
+    public function setType($type = null)
     {
         $this->type = $type;
     }
@@ -63,7 +63,7 @@ abstract class ContentType extends CommonAttributes implements ContentTypeInterf
     /**
      * @param string $src
      */
-    public function setSrc($src)
+    public function setSrc($src = null)
     {
         $this->src = $src;
     }
@@ -79,7 +79,7 @@ abstract class ContentType extends CommonAttributes implements ContentTypeInterf
     /**
      * @param string $content
      */
-    public function setContent($content)
+    public function setContent($content = null)
     {
         $this->content = $content;
     }

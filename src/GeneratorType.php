@@ -22,7 +22,7 @@ abstract class GeneratorType extends CommonAttributes implements GeneratorTypeIn
     protected $generator;
 
     /**
-     * @return mixed
+     * @return string
      */
     public function getUri()
     {
@@ -30,15 +30,15 @@ abstract class GeneratorType extends CommonAttributes implements GeneratorTypeIn
     }
 
     /**
-     * @param mixed $uri
+     * @param string $uri
      */
-    public function setUri($uri)
+    public function setUri($uri = null)
     {
         $this->uri = $uri;
     }
 
     /**
-     * @return mixed
+     * @return string
      */
     public function getVersion()
     {
@@ -46,15 +46,15 @@ abstract class GeneratorType extends CommonAttributes implements GeneratorTypeIn
     }
 
     /**
-     * @param mixed $version
+     * @param string $version
      */
-    public function setVersion($version)
+    public function setVersion($version = null)
     {
         $this->version = $version;
     }
 
     /**
-     * @return mixed
+     * @return string
      */
     public function getGenerator()
     {
@@ -62,9 +62,9 @@ abstract class GeneratorType extends CommonAttributes implements GeneratorTypeIn
     }
 
     /**
-     * @param mixed $generator
+     * @param string $generator
      */
-    public function setGenerator($generator)
+    public function setGenerator($generator = null)
     {
         $this->generator = $generator;
     }

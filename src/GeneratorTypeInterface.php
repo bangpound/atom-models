@@ -18,32 +18,32 @@ namespace Bangpound\Atom\Model;
 interface GeneratorTypeInterface extends CommonAttributesInterface
 {
     /**
-     * @return mixed
+     * @return string
      */
     public function getUri();
 
     /**
-     * @param mixed $uri
+     * @param string $uri
      */
-    public function setUri($uri);
+    public function setUri($uri = null);
 
     /**
-     * @return mixed
+     * @return string
      */
     public function getVersion();
 
     /**
-     * @param mixed $version
+     * @param string $version
      */
-    public function setVersion($version);
+    public function setVersion($version = null);
 
     /**
-     * @return mixed
+     * @return string
      */
     public function getGenerator();
 
     /**
-     * @param mixed $generator
+     * @param string $generator
      */
-    public function setGenerator($generator);
+    public function setGenerator($generator = null);
 }

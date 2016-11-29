@@ -25,7 +25,7 @@ interface ContentTypeInterface extends CommonAttributesInterface
     /**
      * @param string $type
      */
-    public function setType($type);
+    public function setType($type = null);
 
     /**
      * @return string
@@ -35,7 +35,7 @@ interface ContentTypeInterface extends CommonAttributesInterface
     /**
      * @param string $src
      */
-    public function setSrc($src);
+    public function setSrc($src = null);
 
     /**
      * @return string
@@ -45,5 +45,5 @@ interface ContentTypeInterface extends CommonAttributesInterface
     /**
      * @param string $content
      */
-    public function setContent($content);
+    public function setContent($content = null);
 }

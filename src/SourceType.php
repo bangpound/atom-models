@@ -164,7 +164,7 @@ abstract class SourceType extends CommonTypes implements SourceTypeInterface
     /**
      * @param string $id
      */
-    public function setId($id)
+    public function setId($id = null)
     {
         $this->id = $id;
     }
@@ -180,7 +180,7 @@ abstract class SourceType extends CommonTypes implements SourceTypeInterface
     /**
      * @param string $icon
      */
-    public function setIcon($icon)
+    public function setIcon($icon = null)
     {
         $this->icon = $icon;
     }

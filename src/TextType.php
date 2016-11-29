@@ -40,7 +40,7 @@ abstract class TextType extends CommonAttributes implements TextTypeInterface
     /**
      * @param string $text
      */
-    public function setText($text)
+    public function setText($text = null)
     {
         $this->text = $text;
     }
@@ -56,7 +56,7 @@ abstract class TextType extends CommonAttributes implements TextTypeInterface
     /**
      * @param string $type
      */
-    public function setType($type)
+    public function setType($type = null)
     {
         $this->type = $type;
     }

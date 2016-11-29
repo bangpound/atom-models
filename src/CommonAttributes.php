@@ -30,7 +30,7 @@ abstract class CommonAttributes implements CommonAttributesInterface
     /**
      * @param string $lang
      */
-    public function setLang($lang)
+    public function setLang($lang = null)
     {
         $this->lang = $lang;
     }
@@ -46,7 +46,7 @@ abstract class CommonAttributes implements CommonAttributesInterface
     /**
      * @param string $base
      */
-    public function setBase($base)
+    public function setBase($base = null)
     {
         $this->base = $base;
     }

@@ -65,7 +65,7 @@ interface SourceTypeInterface extends CommonAttributesInterface
     /**
      * @param string $logo
      */
-    public function setLogo($logo);
+    public function setLogo($logo = null);
 
     /**
      * @return string
@@ -75,7 +75,7 @@ interface SourceTypeInterface extends CommonAttributesInterface
     /**
      * @param string $id
      */
-    public function setId($id);
+    public function setId($id = null);
 
     /**
      * @return string
@@ -85,7 +85,7 @@ interface SourceTypeInterface extends CommonAttributesInterface
     /**
      * @param string $icon
      */
-    public function setIcon($icon);
+    public function setIcon($icon = null);
 
     /**
      * @return GeneratorTypeInterface

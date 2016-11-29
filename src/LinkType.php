@@ -70,7 +70,7 @@ abstract class LinkType extends CommonAttributes implements LinkTypeInterface
     /**
      * @param string $href
      */
-    public function setHref($href)
+    public function setHref($href = null)
     {
         $this->href = $href;
     }
@@ -86,7 +86,7 @@ abstract class LinkType extends CommonAttributes implements LinkTypeInterface
     /**
      * @param string $rel
      */
-    public function setRel($rel)
+    public function setRel($rel = null)
     {
         $this->rel = $rel;
     }
@@ -102,7 +102,7 @@ abstract class LinkType extends CommonAttributes implements LinkTypeInterface
     /**
      * @param string $type
      */
-    public function setType($type)
+    public function setType($type = null)
     {
         $this->type = $type;
     }
@@ -118,7 +118,7 @@ abstract class LinkType extends CommonAttributes implements LinkTypeInterface
     /**
      * @param string $hreflang
      */
-    public function setHreflang($hreflang)
+    public function setHreflang($hreflang = null)
     {
         $this->hreflang = $hreflang;
     }
@@ -134,7 +134,7 @@ abstract class LinkType extends CommonAttributes implements LinkTypeInterface
     /**
      * @param string $title
      */
-    public function setTitle($title)
+    public function setTitle($title = null)
     {
         $this->title = $title;
     }
@@ -150,7 +150,7 @@ abstract class LinkType extends CommonAttributes implements LinkTypeInterface
     /**
      * @param int $length
      */
-    public function setLength($length)
+    public function setLength($length = null)
     {
         $this->length = $length;
     }

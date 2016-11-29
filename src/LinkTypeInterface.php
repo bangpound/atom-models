@@ -25,7 +25,7 @@ interface LinkTypeInterface extends CommonAttributesInterface
     /**
      * @param string $href
      */
-    public function setHref($href);
+    public function setHref($href = null);
 
     /**
      * @return string
@@ -35,7 +35,7 @@ interface LinkTypeInterface extends CommonAttributesInterface
     /**
      * @param string $rel
      */
-    public function setRel($rel);
+    public function setRel($rel = null);
 
     /**
      * @return string
@@ -45,7 +45,7 @@ interface LinkTypeInterface extends CommonAttributesInterface
     /**
      * @param string $type
      */
-    public function setType($type);
+    public function setType($type = null);
 
     /**
      * @return string
@@ -55,7 +55,7 @@ interface LinkTypeInterface extends CommonAttributesInterface
     /**
      * @param string $hreflang
      */
-    public function setHreflang($hreflang);
+    public function setHreflang($hreflang = null);
 
     /**
      * @return string
@@ -65,7 +65,7 @@ interface LinkTypeInterface extends CommonAttributesInterface
     /**
      * @param string $title
      */
-    public function setTitle($title);
+    public function setTitle($title = null);
 
     /**
      * @return int
@@ -75,5 +75,5 @@ interface LinkTypeInterface extends CommonAttributesInterface
     /**
      * @param int $length
      */
-    public function setLength($length);
+    public function setLength($length = null);
 }

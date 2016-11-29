@@ -49,7 +49,7 @@ abstract class CategoryType extends CommonAttributes implements CategoryTypeInte
     /**
      * @param string $term
      */
-    public function setTerm($term)
+    public function setTerm($term = null)
     {
         $this->term = $term;
     }
@@ -65,7 +65,7 @@ abstract class CategoryType extends CommonAttributes implements CategoryTypeInte
     /**
      * @param string $scheme
      */
-    public function setScheme($scheme)
+    public function setScheme($scheme = null)
     {
         $this->scheme = $scheme;
     }
@@ -81,7 +81,7 @@ abstract class CategoryType extends CommonAttributes implements CategoryTypeInte
     /**
      * @param string $label
      */
-    public function setLabel($label)
+    public function setLabel($label = null)
     {
         $this->label = $label;
     }

@@ -35,7 +35,7 @@ interface EntryTypeInterface extends CommonTypesInterface
     /**
      * @param string $id
      */
-    public function setId($id);
+    public function setId($id = null);
 
     /**
      * @return \DateTimeInterface

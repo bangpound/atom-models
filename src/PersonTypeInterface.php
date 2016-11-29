@@ -25,7 +25,7 @@ interface PersonTypeInterface extends CommonAttributesInterface
     /**
      * @param string $name
      */
-    public function setName($name);
+    public function setName($name = null);
 
     /**
      * @return string
@@ -35,7 +35,7 @@ interface PersonTypeInterface extends CommonAttributesInterface
     /**
      * @param string $uri
      */
-    public function setUri($uri);
+    public function setUri($uri = null);
 
     /**
      * @return string
@@ -45,5 +45,5 @@ interface PersonTypeInterface extends CommonAttributesInterface
     /**
      * @param string $email
      */
-    public function setEmail($email);
+    public function setEmail($email = null);
 }

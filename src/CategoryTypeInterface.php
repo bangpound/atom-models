@@ -25,7 +25,7 @@ interface CategoryTypeInterface extends CommonAttributesInterface
     /**
      * @param string $term
      */
-    public function setTerm($term);
+    public function setTerm($term = null);
 
     /**
      * @return string
@@ -35,7 +35,7 @@ interface CategoryTypeInterface extends CommonAttributesInterface
     /**
      * @param string $scheme
      */
-    public function setScheme($scheme);
+    public function setScheme($scheme = null);
 
     /**
      * @return string
@@ -45,5 +45,5 @@ interface CategoryTypeInterface extends CommonAttributesInterface
     /**
      * @param string $label
      */
-    public function setLabel($label);
+    public function setLabel($label = null);
 }

@@ -49,7 +49,7 @@ abstract class PersonType extends CommonAttributes implements PersonTypeInterfac
     /**
      * @param string $name
      */
-    public function setName($name)
+    public function setName($name = null)
     {
         $this->name = $name;
     }
@@ -65,7 +65,7 @@ abstract class PersonType extends CommonAttributes implements PersonTypeInterfac
     /**
      * @param string $uri
      */
-    public function setUri($uri)
+    public function setUri($uri = null)
     {
         $this->uri = $uri;
     }
@@ -81,7 +81,7 @@ abstract class PersonType extends CommonAttributes implements PersonTypeInterfac
     /**
      * @param string $email
      */
-    public function setEmail($email)
+    public function setEmail($email = null)
     {
         $this->email = $email;
     }

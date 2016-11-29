@@ -17,7 +17,7 @@ interface CommonAttributesInterface
     /**
      * @param string $lang
      */
-    public function setLang($lang);
+    public function setLang($lang = null);
 
     /**
      * @return string
@@ -27,5 +27,5 @@ interface CommonAttributesInterface
     /**
      * @param string $base
      */
-    public function setBase($base);
+    public function setBase($base = null);
 }

@@ -25,7 +25,7 @@ interface TextTypeInterface extends CommonAttributesInterface
     /**
      * @param string $text
      */
-    public function setText($text);
+    public function setText($text = null);
 
     /**
      * @return string
@@ -35,5 +35,5 @@ interface TextTypeInterface extends CommonAttributesInterface
     /**
      * @param string $type
      */
-    public function setType($type);
+    public function setType($type = null);
 }

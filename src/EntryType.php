@@ -100,7 +100,7 @@ abstract class EntryType extends CommonTypes implements EntryTypeInterface
     /**
      * @param string $id
      */
-    public function setId($id)
+    public function setId($id = null)
     {
         $this->id = $id;
     }
@@ -180,7 +180,7 @@ abstract class EntryType extends CommonTypes implements EntryTypeInterface
     /**
      * @param SourceTypeInterface $source
      */
-    public function setSource(SourceTypeInterface $source  = null)
+    public function setSource(SourceTypeInterface $source = null)
     {
         $this->source = $source;
     }
