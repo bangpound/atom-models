@@ -15,7 +15,7 @@ namespace Bangpound\Atom\Model;
  *
  * @internal targetNamespace = http://www.w3.org/2005/Atom
  */
-interface SourceTypeInterface extends CommonAttributesInterface
+interface SourceTypeInterface extends CommonTypesInterface
 {
     /**
      * @return \DateTimeInterface
