@@ -209,26 +209,6 @@ abstract class FeedType extends CommonTypes implements FeedTypeInterface
     }
 
     /**
-     * Add entry.
-     *
-     * @param EntryTypeInterface $entry
-     */
-    public function addEntry(EntryTypeInterface $entry)
-    {
-        $this->entries[] = $entry;
-    }
-
-    /**
-     * Remove entry.
-     *
-     * @param EntryTypeInterface $entry
-     */
-    public function removeEntry(EntryTypeInterface $entry)
-    {
-        $this->entries = array_diff($this->entries, [$entry]);
-    }
-
-    /**
      * Get entries.
      *
      * @return array

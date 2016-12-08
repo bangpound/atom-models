@@ -36,26 +36,6 @@ abstract class CommonTypes extends CommonAttributes implements CommonTypesInterf
     protected $links;
 
     /**
-     * Add author.
-     *
-     * @param PersonTypeInterface $author
-     */
-    public function addAuthor(PersonTypeInterface $author)
-    {
-        $this->authors[] = $author;
-    }
-
-    /**
-     * Remove author.
-     *
-     * @param PersonTypeInterface $author
-     */
-    public function removeAuthor(PersonTypeInterface $author)
-    {
-        $this->authors = array_diff($this->authors, [$author]);
-    }
-
-    /**
      * Get authors.
      *
      * @return PersonTypeInterface[]
@@ -73,26 +53,6 @@ abstract class CommonTypes extends CommonAttributes implements CommonTypesInterf
     public function setAuthors($authors = [])
     {
         $this->authors = $authors;
-    }
-
-    /**
-     * Add category.
-     *
-     * @param CategoryTypeInterface $category
-     */
-    public function addCategory(CategoryTypeInterface $category)
-    {
-        $this->categories[] = $category;
-    }
-
-    /**
-     * Remove category.
-     *
-     * @param CategoryTypeInterface $category
-     */
-    public function removeCategory(CategoryTypeInterface $category)
-    {
-        $this->categories = array_diff($this->categories, [$category]);
     }
 
     /**
@@ -116,26 +76,6 @@ abstract class CommonTypes extends CommonAttributes implements CommonTypesInterf
     }
 
     /**
-     * Add contributor.
-     *
-     * @param PersonTypeInterface $contributor
-     */
-    public function addContributor(PersonTypeInterface $contributor)
-    {
-        $this->contributors[] = $contributor;
-    }
-
-    /**
-     * Remove contributor.
-     *
-     * @param PersonTypeInterface $contributor
-     */
-    public function removeContributor(PersonTypeInterface $contributor)
-    {
-        $this->contributors = array_diff($this->contributors, [$contributor]);
-    }
-
-    /**
      * Get contributors.
      *
      * @return PersonTypeInterface[]
@@ -153,26 +93,6 @@ abstract class CommonTypes extends CommonAttributes implements CommonTypesInterf
     public function setContributors($contributors = [])
     {
         $this->contributors = $contributors;
-    }
-
-    /**
-     * Add link.
-     *
-     * @param LinkTypeInterface $link
-     */
-    public function addLink(LinkTypeInterface $link)
-    {
-        $this->links[] = $link;
-    }
-
-    /**
-     * Remove link.
-     *
-     * @param LinkTypeInterface $link
-     */
-    public function removeLink(LinkTypeInterface $link)
-    {
-        $this->links = array_diff($this->links, [$link]);
     }
 
     /**

@@ -98,20 +98,6 @@ interface FeedTypeInterface extends CommonTypesInterface
     public function setUpdated(\DateTimeInterface $updated = null);
 
     /**
-     * Add entry.
-     *
-     * @param EntryTypeInterface $entry
-     */
-    public function addEntry(EntryTypeInterface $entry);
-
-    /**
-     * Remove entry.
-     *
-     * @param EntryTypeInterface $entry
-     */
-    public function removeEntry(EntryTypeInterface $entry);
-
-    /**
      * Get entries.
      *
      * @return EntryTypeInterface[]

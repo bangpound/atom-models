@@ -8,20 +8,6 @@ namespace Bangpound\Atom\Model;
 interface CommonTypesInterface extends CommonAttributesInterface
 {
     /**
-     * Add author.
-     *
-     * @param PersonTypeInterface $author
-     */
-    public function addAuthor(PersonTypeInterface $author);
-
-    /**
-     * Remove author.
-     *
-     * @param PersonTypeInterface $author
-     */
-    public function removeAuthor(PersonTypeInterface $author);
-
-    /**
      * Get authors.
      *
      * @return PersonTypeInterface[]
@@ -36,20 +22,6 @@ interface CommonTypesInterface extends CommonAttributesInterface
     public function setAuthors($authors = []);
 
     /**
-     * Add category.
-     *
-     * @param CategoryTypeInterface $category
-     */
-    public function addCategory(CategoryTypeInterface $category);
-
-    /**
-     * Remove category.
-     *
-     * @param CategoryTypeInterface $category
-     */
-    public function removeCategory(CategoryTypeInterface $category);
-
-    /**
      * Get category.
      *
      * @return CategoryTypeInterface[]
@@ -61,21 +33,7 @@ interface CommonTypesInterface extends CommonAttributesInterface
      *
      * @param CategoryTypeInterface[] $categories
      */
-    public function setCategories($categories = []);
-
-    /**
-     * Add contributor.
-     *
-     * @param PersonTypeInterface $contributor
-     */
-    public function addContributor(PersonTypeInterface $contributor);
-
-    /**
-     * Remove contributor.
-     *
-     * @param PersonTypeInterface $contributor
-     */
-    public function removeContributor(PersonTypeInterface $contributor);
+    public function setCategories(array $categories = null);
 
     /**
      * Get contributors.
@@ -90,20 +48,6 @@ interface CommonTypesInterface extends CommonAttributesInterface
      * @param PersonTypeInterface[] $contributors
      */
     public function setContributors($contributors = []);
-
-    /**
-     * Add link.
-     *
-     * @param LinkTypeInterface $link
-     */
-    public function addLink(LinkTypeInterface $link);
-
-    /**
-     * Remove link.
-     *
-     * @param LinkTypeInterface $link
-     */
-    public function removeLink(LinkTypeInterface $link);
 
     /**
      * Get links.
