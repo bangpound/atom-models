@@ -33,7 +33,7 @@ interface CommonTypesInterface extends CommonAttributesInterface
      *
      * @param CategoryTypeInterface[] $categories
      */
-    public function setCategories(array $categories = null);
+    public function setCategories($categories = []);
 
     /**
      * Get contributors.
